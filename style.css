@@ -24,18 +24,35 @@ body{
     padding-left: 1rem;
     padding-right: 1rem;
 }
+.flex{
+    display: flex;
+}
 a{
     text-decoration: none;
 }
 ul li{
     list-style: none;
 }
+.bg-white{
+    background-color: white;
+}
+.bg-purple{
+    background-color: purple;
+}
+
 
 /* HEADER */
 header{
-    background-color: blue;
+    background-color: rgb(51, 85, 255);
 }
 .site-header{
     height: 70px;
     align-items: center;
+    justify-content: space-between;
 }
+.nav-actions{
+    gap: 30px;
+}
+
+/* MAIN */
+ 
