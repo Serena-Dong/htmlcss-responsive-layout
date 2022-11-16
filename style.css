@@ -49,14 +49,20 @@ ul li{
 .bg-purple{
     background-color: rgb(159, 130, 238);
 }
+.col-20{
+    flex-basis: 20%;
+}
+.col-30{
+    flex-basis: 30%;
+}
 .col-40{
     flex-basis: 40%;
 }
 .col-60{
     flex-basis: 60%;
 }
-.col-20{
-    flex-basis: 20%;
+.col-70{
+    flex-basis: 70%;
 }
 .col-80{
     flex-basis: 80%;
@@ -87,6 +93,7 @@ section{
     margin-bottom: 5rem;
     border: 1px black dashed;
 }
+
 /* JUMBOTRON */
 .jumbotron .col{
     width: 30%;
@@ -98,10 +105,11 @@ section{
 .jumbotron .col-small{
     width: calc(100%/ 3);
 }
+
+
 /* PLANNING */
 .planning .row{
     margin: 3rem 10rem;
-    height: 700px;
     align-items: flex-end;
 }
 .planning .col{
@@ -110,6 +118,8 @@ section{
 .planning .col-right{
     height: 500px;
 }
+
+
 /* PARTNERS*/
 .partners .row{
     flex-direction: column;
@@ -131,6 +141,8 @@ section{
 .col-in-left{
     border-radius: 100px;
 }
+
+
 /* BENEFITS */
 .benefits .row{
     flex-wrap: wrap;
@@ -142,4 +154,22 @@ section{
     border-radius: 30px;
 
     background-color: white;
+}
+
+
+/* ABOUT-US */
+.about-us .row{
+    margin: 2rem;
+}
+.about-us .col-left{
+    height: 700px;
+    margin-right: 3rem ;
+}
+.about-us .col-right{
+    height: 600px;
+}
+.about-us img{
+    border-radius: 50%;
+    width: 250px;
+    
 }
