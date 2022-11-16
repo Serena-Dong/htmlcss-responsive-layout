@@ -30,7 +30,6 @@ img {
     padding: 1rem;
     border: black 2px dashed;
     height: 300px;
-    
 }
 .flex{
     display: flex;
@@ -78,10 +77,9 @@ section{
 }
 .jumbotron .col-large{
     width: calc(200%/ 3);
-    border: black 2px dashed;
+
 }
 .jumbotron .col-small{
     width: calc(100%/ 3);
-    border: black 2px dashed;
 }
 
