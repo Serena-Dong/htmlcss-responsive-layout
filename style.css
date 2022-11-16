@@ -3,7 +3,39 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* GENERAL */
 body{
     font-family:  sans-serif ;
     background-color: white;
+}
+.border{
+     border-color: black 1px dashed;
+}
+/* UTILS */
+.container{
+    width: 1200px;
+    border: 1px black dashed;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+}
+.col{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+a{
+    text-decoration: none;
+}
+ul li{
+    list-style: none;
+}
+
+/* HEADER */
+header{
+    background-color: blue;
+}
+.site-header{
+    height: 70px;
+    align-items: center;
 }
