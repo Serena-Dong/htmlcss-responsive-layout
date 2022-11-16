@@ -24,7 +24,6 @@ img {
 .row{
     display: flex;
     justify-content: center;
-
 }
 .col, .col-large, .col-small{
     margin: 1rem;
@@ -95,7 +94,6 @@ section{
 }
 .jumbotron .col-large{
     width: calc(200%/ 3);
-
 }
 .jumbotron .col-small{
     width: calc(100%/ 3);
@@ -132,4 +130,16 @@ section{
 }
 .col-in-left{
     border-radius: 100px;
+}
+/* BENEFITS */
+.benefits .row{
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+}
+.benefits .col{
+    width: 30%;
+    min-height: 400px;
+    border-radius: 30px;
+
+    background-color: white;
 }
