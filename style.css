@@ -56,6 +56,14 @@ ul li{
 .col-60{
     flex-basis: 60%;
 }
+.col-20{
+    flex-basis: 20%;
+}
+.col-80{
+    flex-basis: 80%;
+}
+
+
 
 /* HEADER */
 header{
@@ -97,11 +105,31 @@ section{
     margin: 3rem 10rem;
     height: 700px;
     align-items: flex-end;
-
 }
 .planning .col{
     height: 650px;
 }
 .planning .col-right{
     height: 500px;
+}
+/* PARTNERS*/
+.partners .row{
+    flex-direction: column;
+}
+.partners .col{
+    background-color:  rgb(159, 130, 238);
+    border-radius: 50px;
+}
+.partners .row-in{
+    min-height: 250px;
+
+    flex-direction: row;
+    align-items: center;
+}
+.partners .col-in{
+    min-height: 200px;
+    margin: 2rem;
+}
+.col-in-left{
+    border-radius: 100px;
 }
