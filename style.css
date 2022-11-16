@@ -17,13 +17,14 @@ img {
 /* UTILS */
 .container{
     max-width: 1200px;
-    height: 700px;
+    min-height: 700px;
     border: 1px black dashed;
     margin: 0 auto;
 }
 .row{
     display: flex;
     justify-content: center;
+
 }
 .col, .col-large, .col-small{
     margin: 1rem;
@@ -49,7 +50,12 @@ ul li{
 .bg-purple{
     background-color: rgb(159, 130, 238);
 }
-
+.col-40{
+    flex-basis: 40%;
+}
+.col-60{
+    flex-basis: 60%;
+}
 
 /* HEADER */
 header{
@@ -57,7 +63,11 @@ header{
     margin-bottom: 3rem;
 }
 .site-header{
+    max-width: 1200px;
     height: 70px;
+    margin: 0 auto;
+
+    
     align-items: center;
     justify-content: space-between;
 }
@@ -82,4 +92,16 @@ section{
 .jumbotron .col-small{
     width: calc(100%/ 3);
 }
+/* PLANNING */
+.planning .row{
+    margin: 3rem 10rem;
+    height: 700px;
+    align-items: flex-end;
 
+}
+.planning .col{
+    height: 650px;
+}
+.planning .col-right{
+    height: 500px;
+}
