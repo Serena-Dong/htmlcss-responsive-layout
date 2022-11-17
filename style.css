@@ -29,7 +29,7 @@ img {
     margin: 1rem;
     padding: 1rem;
     border: black 2px dashed;
-    height: 300px;
+    min-height: 300px;
 }
 .flex{
     display: flex;
@@ -58,12 +58,6 @@ ul li{
 .col-30{
     flex-basis: 30%;
 }
-.col-40{
-    flex-basis: 40%;
-}
-.col-60{
-    flex-basis: 60%;
-}
 .col-70{
     flex-basis: 70%;
 }
@@ -75,6 +69,7 @@ ul li{
 
 /* HEADER */
 header{
+    width: 100% ;
     background-color: rgb(51, 85, 255);
     margin-bottom: 3rem;
 }
@@ -115,11 +110,13 @@ section{
     margin: 3rem 10rem;
     align-items: flex-end;
 }
-.planning .col{
-    height: 650px;
+.planning .col-left{
+    flex-basis: 50%;
+    min-height: 650px;
 }
 .planning .col-right{
-    height: 500px;
+    flex-basis: 50%;
+    min-height: 500px;
 }
 
 
@@ -143,7 +140,16 @@ section{
 }
 .col-in-left{
     border-radius: 100px;
+    display: flex;
+    align-items: center;
+
 }
+.partners img{
+    border-radius: 100%;
+    width: 300px;
+
+}
+
 
 
 /* BENEFITS */
@@ -173,8 +179,7 @@ section{
 }
 .about-us img{
     border-radius: 50%;
-    width: 250px;
-    
+    width: 250px; 
 }
 
 
@@ -183,3 +188,30 @@ section{
     width: 600px;
     margin: 0 auto;
 }
+
+@media screen and (max-width:768px) {
+    .planning .row{
+        flex-wrap: wrap;
+        margin: 0;
+    }
+    .planning .col-left, .planning .col-right{
+        flex-basis: 100%;
+    }
+    .benefits .col{
+        width: 45%;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .jumbotron .row{
+        flex-wrap: wrap;
+        margin: 0;
+    }
+    .partners .row, .about-us .row{
+        flex-direction: column;
+    }
+    .benefits .col{
+        width: 90%;
+    }
+}
+
