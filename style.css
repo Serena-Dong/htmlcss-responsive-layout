@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 /* GENERAL */
 body{
     font-family:  sans-serif ;
@@ -14,10 +15,10 @@ body{
 img {
     max-width: 100%;
 }
+
 /* UTILS */
 .container{
     max-width: 1200px;
-    min-height: 300px;
     border: 1px black dashed;
     margin: 0 auto;
 }
@@ -65,20 +66,28 @@ ul li{
     flex-basis: 80%;
 }
 
-
+/* BUTTONI */
+.btn{
+    border-radius: 50px;
+}
+#btn-get-started{
+    color: rgb(110, 110, 110);
+    padding: 10px 15px;
+}
 
 /* HEADER */
 header{
     width: 100% ;
     background-color: rgb(51, 85, 255);
-    margin-bottom: 3rem;
+
+    position: fixed;
+    z-index: 1;
 }
 .site-header{
     max-width: 1200px;
     height: 70px;
     margin: 0 auto;
 
-    
     align-items: center;
     justify-content: space-between;
 }
@@ -88,11 +97,13 @@ header{
 .nav-actions{
     gap: 30px;
 }
+.nav-actions li  > * {
+    color: white;
+}
 .menù{
     display: none;
-
-    color: white;
     padding: 30px;
+    color: white;
     font-size: 1.5rem;
 }
 /* MAIN */
@@ -102,6 +113,10 @@ section{
 }
 
 /* JUMBOTRON */
+.jumbotron .container{
+    position: relative;
+    margin-top: 6rem;
+}
 .jumbotron .col{
     width: 30%;
     background-color: orange;
@@ -194,11 +209,14 @@ section{
 
 /* FOOTER */
 .footer-container{
-    width: 600px;
+    max-width: 600px;
     margin: 0 auto;
 }
 
+
+
 @media screen and (max-width:768px) {
+
     .planning .row{
         flex-wrap: wrap;
         margin: 0;
@@ -207,7 +225,7 @@ section{
         flex-basis: 100%;
     }
     .benefits .col{
-        width: 45%;
+        width: 40%;
     }
     .nav-actions{
         display: none;
