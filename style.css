@@ -82,10 +82,19 @@ header{
     align-items: center;
     justify-content: space-between;
 }
+.logo{
+    padding: 30px;
+}
 .nav-actions{
     gap: 30px;
 }
+.menù{
+    display: none;
 
+    color: white;
+    padding: 30px;
+    font-size: 1.5rem;
+}
 /* MAIN */
 section{
     margin-bottom: 5rem;
@@ -199,6 +208,12 @@ section{
     }
     .benefits .col{
         width: 45%;
+    }
+    .nav-actions{
+        display: none;
+    }
+    .menù{
+        display: block;
     }
 }
 
