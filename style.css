@@ -32,7 +32,7 @@ img {
     padding: 1rem;
     border: black 2px dashed;
     min-height: 100px;
-    border-radius: 30px;
+    border-radius: 25px;
 }
 .flex{
     display: flex;
@@ -57,6 +57,9 @@ p{
 }
 span{
     line-height: 2rem;
+}
+.white{
+    color: white;
 }
 .light-black{
     color: rgb(84, 84, 84);
@@ -104,6 +107,10 @@ h3{
 #btn-get-started{
     color: rgb(110, 110, 110);
     padding: 10px 15px;
+}
+#btn-more{
+    background-color: #9593e6;
+    padding: 10px 35px;
 }
 
 /* HEADER */
@@ -243,8 +250,16 @@ section{
 .benefits .col{
     width: 30%;
     min-height: 400px;
+    padding: 40px 30px;
 
     background-color: white;
+}
+.benefits h2{
+    color: white;
+    margin-top: 3rem;
+}
+.benefits .col{
+    color: #9593e6;
 }
 
 
