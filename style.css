@@ -60,7 +60,9 @@ span{
 }
 .light-black{
     color: rgb(84, 84, 84);
-
+}
+.purple{
+    color: #9593e6;
 }
 .bg-white{
     background-color: white;
@@ -82,6 +84,17 @@ span{
 }
 .col-80{
     flex-basis: 80%;
+}
+/* SIZES */
+
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 2rem;
+}
+h3{
+    font-size: 1.2rem;
 }
 
 /* BUTTONI */
@@ -154,7 +167,7 @@ section{
 }
 
 .planning .col-left{
-    flex-basis: 60%;
+    flex-basis: 55%;
 }
 .planning .col-right{
     padding:  40px;
@@ -168,11 +181,13 @@ section{
     line-height: 2rem;
 }
 .fa-arrow-down{
+    color: black;
     border-radius: 50%;
     padding: 15px 17px;
 }
 .strategic-card img{
     width: 800px;
+    margin-bottom: 5rem;
 }
 .app-card img{
     width: 200px;
