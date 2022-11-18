@@ -10,6 +10,7 @@ body{
     background-color: white;
 }
 .border{
+    border: black 2px dashed;
 }
 img {
     max-width: 100%;
@@ -135,8 +136,8 @@ header{
     width: 100% ;
     background-color: rgb(51, 85, 255);
 
-    position: fixed;
-    z-index: 1;
+    position: sticky;
+    top: 0;;
 }
 .site-header{
     max-width: 1200px;
@@ -149,8 +150,9 @@ header{
 .logo{
     padding: 30px;
 }
-.nav-actions{
-    gap: 30px;
+.nav-actions>*{
+    margin-left: 20px;
+    margin-right: 20px;
 }
 .nav-actions li  > * {
     color: white;
@@ -164,12 +166,12 @@ header{
 /* MAIN */
 section{
     margin-bottom: 5rem;
-    border: 2px black dashed;
+    border: black 2px dashed;
+
 }
 
 /* JUMBOTRON */
 .jumbotron .container{
-    position: relative;
     margin-top: 6rem;
 }
 .jumbotron .col{
