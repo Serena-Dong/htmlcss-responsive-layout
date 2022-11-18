@@ -10,17 +10,15 @@ body{
     background-color: white;
 }
 .border{
-    border: black 2px dashed;
 }
 img {
     max-width: 100%;
-    margin-bottom: 1rem;
 }
 
 /* UTILS */
 .container{
     max-width: 1200px;
-    border: 1px black dashed;
+
     margin: 0 auto;
 }
 .row{
@@ -30,7 +28,7 @@ img {
 .col, .col-large, .col-small{
     margin: 1rem;
     padding: 1rem;
-    border: black 2px dashed;
+
     min-height: 100px;
     border-radius: 25px;
 }
@@ -43,6 +41,9 @@ img {
 a{
     text-decoration: none;
 }
+.none{
+    text-decoration: underline;
+}
 ul li{
     list-style: none;
 }
@@ -53,7 +54,7 @@ h3{
     margin-bottom: 1rem;
 }
 p{
-    line-height: 2rem;
+    line-height: 2.3rem;
 }
 span{
     line-height: 2rem;
@@ -81,6 +82,12 @@ span{
 }
 .col-30{
     flex-basis: 30%;
+}
+.col-40{
+    flex-basis: 40%;
+}
+.col-60{
+    flex-basis: 60%;
 }
 .col-70{
     flex-basis: 70%;
@@ -112,6 +119,16 @@ h3{
     background-color: #9593e6;
     padding: 10px 35px;
 }
+#btn-find-me{
+    font-size: 0.8rem;
+    padding: 10px 15px;
+}
+#btn-get-started-big{
+    font-size: 1.5rem;
+    padding:25px 80px;
+    margin-bottom: 2rem;
+}
+
 
 /* HEADER */
 header{
@@ -147,7 +164,7 @@ header{
 /* MAIN */
 section{
     margin-bottom: 5rem;
-    border: 1px black dashed;
+    border: 2px black dashed;
 }
 
 /* JUMBOTRON */
@@ -215,7 +232,7 @@ section{
 }
 .testimonials .col-in{
     min-height: 200px;
-    margin: 2rem;
+    margin: 1rem;
 }
 .col-in-left{
     border-radius: 100px;
@@ -238,7 +255,7 @@ section{
 }
 .testimonials img{
     border-radius: 100%;
-    width: 300px;
+    max-width: 200px;
 }
 
 
@@ -268,22 +285,39 @@ section{
     margin: 2rem;
 }
 .about-us .col-left{
-    height: 700px;
-    margin-right: 3rem ;
+    margin-right: 1rem ;
 }
-.about-us .col-right{
-    height: 600px;
-}
+
 .about-us img{
     border-radius: 50%;
     width: 250px; 
+}
+.about-us h1, .about-us h2{
+    color: #9593e6;
+}
+.about-us h2{
+    font-size: 2rem;
+    line-height: 3rem;
 }
 
 
 /* FOOTER */
 .footer-container{
-    max-width: 600px;
+    min-width: 430px;
+    max-width: 750px;
     margin: 0 auto;
+    padding: 3rem;
+}
+
+.footer-container h1{
+    font-size: 6rem;
+    color: orange;
+}
+.footer-container h2{
+    font-size: 3rem;
+}
+.footer-container p{
+    padding: 0px 90px;
 }
 
 
@@ -316,8 +350,22 @@ section{
     .testimonials .row, .about-us .row{
         flex-direction: column;
     }
+    .testimonials .text{
+        text-align: center;
+    }
     .benefits .col{
         width: 90%;
+    }
+    .footer-container h1{
+        font-size: 4rem;
+
+    }
+    .footer-container h2{
+        font-size: 2rem;
+    }
+    .footer-container p{
+        padding: 0;
+        line-height: 1.5rem; 
     }
     h2, h3{
         font-size: 2rem;
