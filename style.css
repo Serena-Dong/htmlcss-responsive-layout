@@ -19,14 +19,14 @@ img {
 /* UTILS */
 .container{
     max-width: 1200px;
-
     margin: 0 auto;
+    border: black 2px dashed;
 }
 .row{
     display: flex;
     justify-content: center;
 }
-.col, .col-large, .col-small{
+.col{
     margin: 1rem;
     padding: 1rem;
 
@@ -170,20 +170,31 @@ section{
 
 }
 
-/* JUMBOTRON */
-.jumbotron .container{
-    margin-top: 6rem;
+/* INTRO */
+.intro .container{
+    margin-top: 3rem;
 }
-.jumbotron .col{
-    width: 30%;
-    background-color: orange;
+.intro .card-deck{
+    display: flex;
+    flex-wrap: wrap;
+    
 }
-.jumbotron .col-large{
-    width: calc(200%/ 3);
+.intro .card{
+    border-radius: 20px;
+    background-color: lightblue;
+    width: calc(100% / 3 - 2rem);
+
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+
+    min-height: 400px;
 }
-.jumbotron .col-small{
-    width: calc(100%/ 3);
+.intro .card:first-child{
+    flex-basis: calc(100% / 3 * 2 - 2rem);
+
 }
+
 
 
 /* PLANNING */
@@ -323,9 +334,14 @@ section{
 }
 
 
-
+/* ********* TABLET */
 @media screen and (max-width:768px) {
-
+    
+    .container{
+        max-width: 750px;
+    }
+    .intro .card-deck{
+    }
     .planning .row{
         flex-wrap: wrap;
         margin: 0;
@@ -343,11 +359,21 @@ section{
         display: block;
     }
 }
-
+/* ********* MOBILE */
 @media screen and (max-width:576px) {
-    .jumbotron .row{
-        flex-wrap: wrap;
-        margin: 0;
+
+    .container{
+        max-width: 550px;
+    }
+    .intro .container{
+        margin-top: 0;
+    }
+    .intro .card-deck{
+        flex-direction: column;
+        padding: 2rem;
+    }
+    .intro .card{
+        width: 93%;
     }
     .testimonials .row, .about-us .row{
         flex-direction: column;
